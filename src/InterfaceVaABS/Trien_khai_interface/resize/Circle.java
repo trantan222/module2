@@ -40,6 +40,11 @@ public class Circle extends Shape {
 
     @Override
     public void resize(double percent) {
-        System.out.println("Kích thước tăng tỷ lệ với "+percent + " = "+ (this.radius+=this.radius * percent/100));
+        System.out.println("Kích thước tăng tỷ lệ với "+percent + " = "+ (this.radius+=this.radius * percent));
+    }
+
+    public static void main(String[] args) {
+        Circle c = new Circle(3);
+       c.resize(4);
     }
 }
